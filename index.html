@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="../css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../css/bootstrap-responsive.min.css" />
+	<title>Documentation for Vireo - Landing Page Template</title>
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div class="blue">
+			<h1 class="center">Vireo - Landing Page Template</h1>
+		</div>
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong> <br>
+						Created: 15/05/2013<br>
+                        Last Update: 21/02/2016 - Version 1.3<br>
+					</strong>
+				</p>
+			</div>
+			<div class="span-12 last">
+				<hr>
+			</div>
+		</div>
+		<div class="span-12">
+			<h1>Table of contents :</h1>
+			<ul>
+				<li><a href="#present">Product Presentation</a></li>
+				<li><a href="#struct">Structure of Html Files</a></li>
+				<li><a href="#structcss">Structure of Css Styles and JS-scripts </a></li>
+				<li><a href="#fontcfg">Fonts and Typography</a></li>
+				<li><a href="#imagesand">Images and Screenshot</a></li>
+				<li><a href="#psd">Psd Files – Overview </a></li>
+				<li><a href="#credits">Credits and Extras</a></li>
+			</ul>
+			<hr />
+		</div>
+
+		<div class="span-12" id="present">
+			<h3>Presentation</h3>
+
+			<p>Vireo is Landing Page Template with 4 different and responsive layouts with Parallax effects. All Psd-files for free.</p>
+
+			<div class="row-fluid">
+				<div class="span">
+					<img src="img/1_old.png" />
+				</div>
+			</div>
+
+			<hr />
+		</div>
+
+		<div class="span-12" id="struct">
+			<h3>Structure of Html Files</h3>
+			<p>All blocks (Promo, Header, Big Features, Small Features, Quotes, Screens, Subscribe and Footer) are located one after the other and use containers with CSS-class<strong> Container </strong> . </p>
+			<div class="row-fluid">
+				<div class="span">
+					<img src="img/1.png" />
+				</div>
+			</div>
+			<hr />
+		</div>
+
+		<div class="span-12" id="structcss">
+			<h3>Structure of Css Styles</h3>
+			<p>
+				All css-styles are located in the folder <strong>/css</strong>.
+				Global styles are located in the file <strong>main.css</strong>.
+				To reset the default style sheet using a file <strong>reset.css</strong>.
+				Styles for responsive are located in the file <strong>responsive.css</strong>.
+			</p>
+			<div class="row-fluid">
+				<div class="span">
+					<img src="img/2.png" />
+				</div>
+			</div>
+
+			<p>
+				We got an empty <strong>custom.css</strong> file which should be used by you to add your own modifications.
+				Since we never touch the custom.css file when making updates you can easily update to later versions without
+				beeing in danger of loosing stylesheet modifications.
+			</p>
+
+			<p>
+				Each browser sets its value for different styles of html-tags. To reset the standard tags and ensure 				cross-browser style sheet is applied <strong>reset.css</strong>.
+			</p>
+
+			<p>
+				Features File global styles <strong>main.css</strong>:
+				<ul>
+					<li>
+						 Description style key tag is placed at the top of the file. For example: <strong>body</strong>, <strong>a</strong>, <strong>h1</strong>, <strong>h2</strong> и т.д.
+					</li>
+					<li>
+						All css-classes are grouped by adding the name of the class name of the container. 						For example: css-classes "<strong>.header .logo-wrap</strong> { ... }", "<strong>.header .menu</strong> { ... }" refer to the container "head", css-классы
+						"<strong>.big-features .title</strong> { ... }", "<strong>.big-features .box</strong> { ... }" - to the container "big-features".
+					</li>
+				</ul>
+			</p>
+			<p>
+				Responsive design is created using CSS3 media queries.
+				The main resolution and page width container container: <strong>container</strong>:
+				<ul>
+					<li>Resolution more than 1300px, container width 1100px.</li>
+					<li>Permission from 980px to 1300px, container width 860px.</li>
+					<li>Permission from 680px to 980px, container width 600px.</li>
+					<li>Resolution of less than 680px, container width 300px.</li>
+				</ul>
+			</p>
+			<hr />
+		</div>
+
+		<div class="span-12">
+			<h3>JavaScript</h3>
+			<p>JavaScript are located in the folder<strong>/js</strong>.</p>
+
+            <ul><li>"Stick header to the top" use <strong>"fixed_header.js"</strong></li><br>
+
+            <li>"Movement" in the promo-area use jQuery-Plugin <strong>"FractionSlider"</strong> (jQuery parallax Slider Plugin). File location: <strong>jquery.fractionslider.js</strong>. Settings: <strong>jquery.fractionslider.option.js.</strong></li><br>
+
+            <li>Modal windows use jQuery-plugin <strong>PrettyPhoto</strong>. File location: <strong>jquery.prettyPhoto.js</strong>. Settings: <strong>jquery.prettyPhoto.option.js</strong>.</li><br>
+
+            <li>"Smooth move on page" use <strong>jQuery.ScrollTo</strong>. File location: <strong>jquery.scrollToTop.min.js</strong>. Settings: <strong>jquery.scrollToTop.option.js</strong>.</li><br>
+
+            <li> "Manifestations" of objects and promo-zone's effects use <strong>animate.js</strong>.</li><br>
+
+	        <li> <strong>respond.src.js</strong> file provides responsive to IE (less than ver. 9.0).</li> </ul><br>
+
+			<div class="row-fluid">
+				<div class="span">
+					<img src="img/4.png" />
+				</div>
+			</div>
+			<p>
+				Settings of <strong>animate.js</strong>:
+			</p>
+			<p>
+				1. To control Speed of "manifestations" after the page loads use <strong>speedOpacity</strong>.
+
+			</p>
+			<p>
+				2. To control "manifestations" of scrolling and promo-zone's objects use <strong>opacityRate</strong>.
+			</p>
+
+			<p>
+				3. To control "manifestations" of promo-zone's background use <strong>backgroundSpeedRate</strong>.
+			</p>
+
+			<div class="row-fluid">
+				<div class="span">
+					<img src="img/6.png" />
+				</div>
+			</div>
+			</p>
+
+			<hr />
+		</div>
+
+
+
+		<div class="span-12" id="fontcfg">
+			<h3>Fonts and Typography</h3>
+			<p>Simplify uses Google Web Fonts : Open Sans <a href="http://www.google.com/fonts/specimen/Open+Sans" class="noline">(download here)</a></p>
+			<div class="row-fluid">
+				<div class="span">
+					<img src="img/3.png" />
+				</div>
+			</div>
+			<hr />
+		</div>
+
+
+
+		<div class="span-12" id="imagesand">
+			<h3>Images and Screenshot</h3>
+			All files are located in folder <strong>img</strong>:
+			<ul>
+				<li>
+					Backgrounds images are in folder <strong>/img/backgrounds/.</strong>
+				</li><br>
+				<li>
+					Gallery images are in folder <strong>/img/gallery/.</strong>
+				</li><br>
+				<li>
+					Images for template header are in folder <strong>/img/header/.</strong>
+				</li><br>
+				<li>
+					Promo-images are in folder <strong>/img/promo/.</strong>
+				</li><br>
+				<li>
+					Quotes images are in folder <strong>/img/quotes/.</strong>
+				</li><br>
+				<li>
+					PrettyPhoto images are in folder <strong>/img/prettyPhoto/.</strong>
+				</li>
+			</ul>
+			<div class="row-fluid">
+				<div class="span">
+					<img src="img/7.png" />
+					<hr />
+				</div>
+			</div>
+			<div class="span-12" id="psd">
+				<h3>PSD-files</h3>
+				<p>The PSD-files included all layers for Template design (Fool, Comming Soon and News Stream), UI-design and izometric views. PSD-files is fully layered and customizable. Please note that some of the layers are hidden from view. You can easily see the contents of these groups of layers, if you make them "visible". </p>
+
+				<div class="span">
+					<img src="img/6_old.png" />
+				</div>
+			</div>
+			<hr />
+		</div>
+
+		<div class="span-12" id="credits">
+			<h3">Credits and Extras</h3>
+			<ul>
+				<li><a href="http://www.pixeden.com/psd-mock-up-templates/iphone-5-psd-vector-mockup" class="noline">Pixeden.com</a> iPhone 5 Psd Vector Mockups </li>
+				<li><a href="http://www.pixeden.com/psd-mock-up-templates/3/4-view-iphone-5-psd-vector-mockup" class="noline">Pixeden.com</a> 3/4 View iPhone 5 Psd Vector Mockup </li>
+                <li><a href="http://www.pixeden.com/psd-mock-up-templates/3d-view-iphone-5-psd-vector-mockup" class="noline">Pixeden.com</a> 3D View iPhone 5 Psd Vector Mockup </li>
+				<li><a href="http://iconsweets2.com/" class="noline">IconSweet2</a> by Yummygum</li>
+				<li><a href="http://subtlepatterns.com/" class="noline">Subtlepatterns.com</a> free patterns </li>
+			</ul>
+			<br>
+			<br>
+			<div class="span">
+				<img src="img/webuza_logo.png" />
+			</div>
+			<br>
+			<br>
+		</div>
+
+	</div>
+
+</body>
+</html>
